@@ -16,14 +16,14 @@ async def start_message(c,m):
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id, m.from_user.first_name)
         await c.send_message(LOG_CHANNEL, LOG_TEXT.format(m.from_user.id, m.from_user.mention))
-    await m.reply_photo(f"https://te.legra.ph/file/119729ea3cdce4fefb6a1.jpg",
+    await m.reply_photo(f"https://graph.org/file/0074381aba5bfe0f76b8f-bcfcf6c109b07ba6b5.jpg",
         caption=f"<b>Hello {m.from_user.mention} 👋\n\nI Am Join Request Acceptor Bot. I Can Accept All Old Pending Join Request.\n\nFor All Pending Join Request Use - /accept</b>",
         reply_markup=InlineKeyboardMarkup(
             [[
-                InlineKeyboardButton('🍻 Aᴅᴅ Tᴏ Cʜᴀᴛ 🍻', url='https://t.me/Mazhavil_approver_bot?startgroup')
+                InlineKeyboardButton('🍻 Aᴅᴅ Tᴏ Cʜᴀᴛ 🍻', url='https://t.me/Mazhavil_approver_bot?startchannel=Bots4Sale&admin=invite_users+manage_chat')
             ],[
                 InlineKeyboardButton("⚓ Uᴘᴅᴀᴛᴇꜱ ⚓", url='https://t.me/+BTh89gNULSdiOWFl'),
-                InlineKeyboardButton("💥 Sᴜᴘᴘᴏʀᴛ 💥", url='https://t.me/+ckz3UhzSj54zMjQ1')
+                InlineKeyboardButton("💥 Sᴜᴘᴘᴏʀᴛ 💥", url='https://t.me/+th0TO2Xdh05lYmM1')
             ]]
         )
     )
